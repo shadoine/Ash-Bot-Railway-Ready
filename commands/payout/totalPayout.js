@@ -2,7 +2,10 @@ const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, Butt
 const sqlite3 = require('sqlite3').verbose();
 const fs = require('fs');
 const path = require('path');
-const config = require('../../config.json');
+
+// Instead of requiring config, read needed values from env:
+const token = process.env.BOT_TOKEN;      // example
+const dbconnect = process.env.DBCONNECT;  // if you use this
 
 module.exports = {
   data: new SlashCommandBuilder()
