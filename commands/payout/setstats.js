@@ -53,7 +53,7 @@ module.exports = {
         .setColor([220, 173, 69])
         .setTitle(`Set ${item} to ${newValue} for ${user.username}`)
         .setDescription(`Old value: ${oldValue}, New value: ${newValue}`)
-        .setAuthor({ name: 'Bumblebee Bot', iconURL: 'https://i.imgur.com/H87MBdp.png' });
+        .setAuthor({ name: 'Payout Bot', iconURL: 'https://i.imgur.com/H87MBdp.png' });
 
       interaction.reply({ embeds: [embed] });
 

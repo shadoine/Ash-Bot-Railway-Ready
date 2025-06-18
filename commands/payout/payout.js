@@ -47,7 +47,7 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setColor([220, 173, 69])
         .setTitle(`Added ${amount} ${item} to the payout.`)
-        .setAuthor({ name: 'Bumblebee Bot', iconURL: 'https://i.imgur.com/H87MBdp.png' })
+        .setAuthor({ name: 'Payout Bot', iconURL: 'https://i.imgur.com/H87MBdp.png' })
         .setDescription(`Total amount of ${item}: ${newValue}`);
 
       interaction.reply({ embeds: [embed] });

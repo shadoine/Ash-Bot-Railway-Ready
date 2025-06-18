@@ -6,7 +6,7 @@ module.exports = {
 	once: true,
 	execute(client) {
 
-		client.user.setActivity('Kjay Likes Men', { type: ActivityType.Playing });
+		client.user.setActivity('Accounting', { type: ActivityType.Playing });
 
 
 		console.log(`Ready! Logged in as ${client.user.tag}`);
