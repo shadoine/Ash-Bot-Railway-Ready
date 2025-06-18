@@ -211,7 +211,7 @@ module.exports = {
           ? ((totalPoints / totalGuildPoints) * 100).toFixed(2) 
           : 0;
 
-        const totalPayout = Math.floor((userPercentage / 100) * 20_000_000).toLocaleString();
+        const totalPayout = Math.floor((userPercentage / 100) * 10_000_000).toLocaleString();
         const totalPayoutFormatted = totalPayout.toLocaleString(); 
 
         const userIBAN = row.userIBAN ?? 'Not Set';
