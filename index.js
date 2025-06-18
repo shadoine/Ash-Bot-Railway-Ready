@@ -2,7 +2,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const token = process.env.BOT_TOKEN;
-const dbconnect = process.env.DBCONNECT; // if you need this too
+const clientId = process.env.CLIENT_ID;
+const guildId = process.env.GUILD_ID;
+const dbconnect = process.env.DBCONNECT; // if you actually use this in your code
+
 
 const sqlite3 = require('sqlite3').verbose();
 
